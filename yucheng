@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wedding Mandarin: Getting Married in Taiwan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#A8102A; --red-deep:#7A0A1E; --gold:#D4AF4F; --gold-soft:#F3E3B0;
+  --ink:#231A1D; --muted:#6E5F63; --paper:#FFFFFF; --blush:#FBEFF0; --line:#EAD6D9;
+  --jade:#2E6B5C; --jade-soft:#E3F1EC; --wrong:#B23A2E;
+  --serif:"Noto Serif TC","Songti TC","PMingLiU",Georgia,serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,-apple-system,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#F4ECEE; --muted:#C2B2B6; --paper:#1A1214; --blush:#2A1B1F; --line:#43302F;
+    --jade:#7CC4AE; --jade-soft:#1D332D; --wrong:#F08A7E; --gold-soft:#4A3B17;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#F4ECEE; --muted:#C2B2B6; --paper:#1A1214; --blush:#2A1B1F; --line:#43302F;
+  --jade:#7CC4AE; --jade-soft:#1D332D; --wrong:#F08A7E; --gold-soft:#4A3B17;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65}
+img{max-width:100%}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.zh{font-family:var(--serif)}
+.py{color:var(--red);font-size:.92em}
+[data-theme-dark] .py{color:var(--gold)}
+body.hide-py .py{visibility:hidden}
+body.hide-en .en{visibility:hidden}
+
+/* nav */
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--red-deep);color:#fff}
+nav.top .wrap{display:flex;align-items:center;gap:6px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+nav.top a{color:#fff;text-decoration:none;white-space:nowrap;padding:6px 12px;border-radius:999px;font-size:15px}
+nav.top a:hover{background:rgba(255,255,255,.14)}
+nav.top .toggles{margin-left:auto;display:flex;gap:6px}
+.chip{border:1px solid rgba(255,255,255,.5);background:transparent;color:#fff;border-radius:999px;padding:4px 12px;font-size:14px;cursor:pointer;white-space:nowrap}
+.chip[aria-pressed="false"]{opacity:.55;text-decoration:line-through}
+
+/* hero */
+header.hero{background:var(--red);color:#fff;position:relative;overflow:hidden}
+header.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:20px;padding-top:56px;padding-bottom:56px}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(40px,6.5vw,72px);line-height:1.1;margin:0 0 10px;letter-spacing:.04em}
+.hero .sub{font-size:clamp(18px,2.2vw,22px);margin:0 0 18px;opacity:.95}
+.hero p.lead{max-width:34em;margin:0 0 24px;color:#FBE7EA}
+.xi{font-family:var(--serif);font-weight:900;font-size:clamp(160px,28vw,300px);line-height:1;color:transparent;-webkit-text-stroke:3px var(--gold);text-align:center;user-select:none;animation:glow 2.4s ease-out 1}
+@keyframes glow{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+.hero .cta{display:inline-block;background:var(--gold);color:var(--red-deep);font-weight:700;padding:12px 22px;border-radius:6px;text-decoration:none}
+.hero .cta2{color:#fff;margin-left:14px}
+@media (max-width:720px){header.hero .wrap{grid-template-columns:1fr}.xi{order:-1;font-size:150px}}
+
+section{padding:64px 0}
+section.alt{background:var(--blush)}
+h2{font-family:var(--serif);font-size:clamp(28px,4vw,38px);margin:0 0 6px;line-height:1.25}
+h2 .zh-h{color:var(--red);margin-right:12px}
+:root[data-theme="dark"] h2 .zh-h{color:var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 .zh-h,:root:not([data-theme="light"]) .py{color:var(--gold)}}
+:root[data-theme="dark"] .py{color:var(--gold)}
+.intro{color:var(--muted);max-width:40em;margin:0 0 32px}
+h3{font-family:var(--serif);font-size:22px;margin:32px 0 12px}
+
+.say{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;flex:0 0 34px;border-radius:50%;border:1.5px solid var(--red);background:transparent;color:var(--red);cursor:pointer}
+.say:hover{background:var(--red);color:#fff}
+.say svg{width:16px;height:16px}
+
+/* timeline */
+.timeline{list-style:none;margin:0;padding:0;counter-reset:step;position:relative}
+.timeline::before{content:"";position:absolute;left:23px;top:8px;bottom:8px;width:2px;background:var(--gold)}
+.timeline li{position:relative;padding:0 0 36px 72px;counter-increment:step}
+.timeline li::before{content:counter(step);position:absolute;left:0;top:0;width:48px;height:48px;border-radius:50%;background:var(--red);color:#fff;font-family:var(--serif);font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;border:3px solid var(--paper)}
+.timeline .t-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
+.timeline .t-zh{font-family:var(--serif);font-size:26px;font-weight:900}
+.timeline .t-en{font-weight:700}
+.timeline p{margin:6px 0 10px;max-width:42em}
+.line-box{display:flex;gap:12px;align-items:flex-start;background:var(--blush);border-radius:8px;padding:12px 14px;max-width:42em}
+section.alt .line-box{background:var(--paper)}
+.line-box .zh{font-size:20px}
+
+/* phrase list */
+.phrases{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2px 32px}
+.phrase{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}
+.phrase .zh{font-size:21px;line-height:1.4}
+.phrase .en{color:var(--muted);font-size:15px}
+.tag{display:inline-block;font-size:13px;color:var(--jade);background:var(--jade-soft);border-radius:4px;padding:0 6px;margin-left:4px}
+
+/* family table */
+.table-scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:480px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:14px;color:var(--muted);font-weight:500}
+td .zh{font-size:20px}
+
+/* vocab */
+.vocab-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.vtab{border:1.5px solid var(--red);background:transparent;color:var(--red);padding:6px 14px;border-radius:999px;cursor:pointer}
+.vtab[aria-selected="true"]{background:var(--red);color:#fff}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.vcard{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.vcard .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.vcard .hz{font-family:var(--serif);font-size:30px;font-weight:600;line-height:1.2}
+.vcard .pos{color:var(--muted);font-size:13px}
+.vcard .ex{margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);font-size:15px}
+.vcard .ex .zh{font-size:16px}
+.vcard .ex .en{color:var(--muted);font-size:14px;display:block}
+
+/* grammar */
+details.gram{border-top:1px solid var(--line);padding:6px 0}
+details.gram:last-of-type{border-bottom:1px solid var(--line)}
+details.gram summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:14px;padding:14px 0;flex-wrap:wrap}
+details.gram summary::-webkit-details-marker{display:none}
+details.gram summary::after{content:"+";margin-left:auto;font-size:26px;color:var(--red);line-height:1}
+details.gram[open] summary::after{content:"\2212"}
+.g-pat{font-family:var(--serif);font-size:26px;font-weight:900;color:var(--red)}
+:root[data-theme="dark"] .g-pat{color:var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .g-pat{color:var(--gold)}}
+.g-name{font-weight:700}
+.g-body{padding:0 0 18px;max-width:46em}
+.g-ex{display:flex;gap:12px;align-items:flex-start;padding:8px 0}
+.g-ex .zh{font-size:19px}
+.g-ex .en{display:block;color:var(--muted);font-size:15px}
+mark{background:var(--gold-soft);color:inherit;padding:0 2px;border-radius:2px}
+
+/* practice */
+.practice-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media (max-width:820px){.practice-grid{grid-template-columns:1fr}}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:22px}
+.quiz-q{font-size:18px;margin:0 0 14px}
+.quiz-q .zh{font-size:22px}
+.opts{display:grid;gap:8px}
+.opt{text-align:left;border:1.5px solid var(--line);background:var(--paper);border-radius:8px;padding:10px 14px;cursor:pointer;font-size:17px}
+.opt:hover:not(:disabled){border-color:var(--red)}
+.opt.right{border-color:var(--jade);background:var(--jade-soft)}
+.opt.wrong{border-color:var(--wrong)}
+.opt:disabled{cursor:default}
+.feedback{min-height:48px;margin:12px 0 0;font-size:15px;color:var(--muted)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:10px;flex-wrap:wrap}
+.btn{background:var(--red);color:#fff;border:0;border-radius:6px;padding:10px 18px;cursor:pointer;font-weight:500}
+.btn.ghost{background:transparent;color:var(--red);border:1.5px solid var(--red)}
+.btn:disabled{opacity:.4;cursor:default}
+.progress{font-size:14px;color:var(--muted)}
+
+.flash{perspective:1000px;height:220px;cursor:pointer;margin-bottom:12px}
+.flash-inner{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.flash.flipped .flash-inner{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px}
+.face.front{background:var(--red);color:#fff}
+.face.front .hz{font-family:var(--serif);font-size:64px;font-weight:900;line-height:1.1}
+.face.back{background:var(--gold-soft);color:var(--ink);transform:rotateY(180deg)}
+.face.back .p{font-size:26px;color:var(--red)}
+:root[data-theme="dark"] .face.back .p{color:var(--gold)}
+.face.back .m{font-size:18px}
+.hint{font-size:13px;opacity:.75;margin-top:8px}
+
+/* toast builder */
+.builder{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:start}
+@media (max-width:860px){.builder{grid-template-columns:1fr}}
+.field{margin-bottom:18px}
+.field label.lab,.field .lab{display:block;font-weight:700;margin-bottom:6px}
+.field input[type=text]{width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font-size:17px}
+.choice{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border-radius:8px;cursor:pointer}
+.choice:hover{background:var(--blush)}
+section.alt .choice:hover{background:var(--paper)}
+.choice input{margin-top:6px;accent-color:var(--red)}
+.choice .zh{font-size:17px}
+.choice .en{display:block;font-size:14px;color:var(--muted)}
+.speech{background:var(--red);color:#fff;border-radius:14px;padding:26px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 70px)}
+.speech h3{margin:0 0 14px;color:var(--gold);font-size:18px;font-family:var(--sans);font-weight:500}
+.speech .s-line{margin:0 0 14px}
+.speech .s-line .zh{font-size:21px;display:block;line-height:1.5}
+.speech .s-line .py{color:var(--gold-soft);font-size:15px;display:block}
+.speech .s-line .en{color:#F6D5DA;font-size:14px;display:block}
+.speech .btn{background:var(--gold);color:var(--red-deep)}
+@media (max-width:860px){.speech{position:static}}
+
+/* checklist */
+.checklist{list-style:none;padding:0;margin:0;max-width:40em}
+.checklist li{border-bottom:1px solid var(--line)}
+.checklist label{display:flex;gap:14px;align-items:flex-start;padding:14px 0;cursor:pointer}
+.checklist input{width:22px;height:22px;margin-top:3px;accent-color:var(--jade);flex:0 0 22px}
+.checklist input:checked + span{color:var(--muted);text-decoration:line-through}
+.done-count{font-family:var(--serif);font-size:20px;margin:0 0 10px;color:var(--jade)}
+
+/* illustrations */
+.ill{display:block;width:100%;height:auto;border-radius:12px}
+.ill .bg{fill:var(--blush)}
+section.alt .ill .bg{fill:var(--paper)}
+.ill .ink{stroke:var(--ink)}
+.ill .inkf{fill:var(--ink)}
+.t-grid{display:grid;grid-template-columns:1fr 220px;gap:24px;align-items:start}
+@media (max-width:720px){.t-grid{grid-template-columns:1fr}.t-grid .ill{max-width:320px;order:-1}}
+.c-ill{max-width:520px;margin:0 0 8px}
+/* culture */
+.ctabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.ctab{border:1.5px solid var(--red);background:transparent;color:var(--red);padding:6px 14px;border-radius:999px;cursor:pointer;font-family:var(--serif);font-size:17px}
+.ctab[aria-selected="true"]{background:var(--red);color:#fff}
+.cpanel{display:grid;grid-template-columns:1.6fr 1fr;gap:36px;align-items:start}
+@media (max-width:820px){.cpanel{grid-template-columns:1fr}}
+.cpoint{padding:14px 0;border-bottom:1px solid var(--line)}
+.cpoint h4{font-family:var(--serif);font-size:20px;margin:0 0 4px}
+.cpoint .zh-p{font-family:var(--serif);font-size:18px;line-height:1.85;margin:0}
+.cpoint .en{display:block;color:var(--muted);font-size:15px;margin-top:4px}
+.terms{background:var(--blush);border-radius:12px;padding:18px 20px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 70px)}
+.terms h4{margin:0 0 8px;font-size:15px;color:var(--muted);font-weight:500}
+.term{display:flex;gap:10px;align-items:center;padding:7px 0;border-bottom:1px dashed var(--line)}
+.term:last-child{border-bottom:0}
+.term .zh{font-size:19px}
+.term .en{font-size:14px;color:var(--muted);display:block}
+.adv{display:inline-block;font-size:12px;background:var(--gold-soft);color:var(--ink);border-radius:4px;padding:0 6px;margin-right:6px;vertical-align:2px}
+@media (max-width:820px){.terms{position:static}}
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:8px}
+.tips h4{margin:0 0 4px;font-size:17px}
+.tips p{margin:0;color:var(--muted);font-size:15px}
+
+footer{background:var(--red-deep);color:#F6D5DA;padding:28px 0;font-size:14px}
+footer .zh{color:var(--gold);font-size:18px}
+</style>
+</head>
+<body>
+
+<nav class="top" aria-label="Sections">
+  <div class="wrap">
+    <a href="#day">The day</a>
+    <a href="#culture">婚禮文化</a>
+    <a href="#parents">Her parents</a>
+    <a href="#words">Words</a>
+    <a href="#grammar">Grammar</a>
+    <a href="#toast">Your toast</a>
+    <a href="#practice">Practice</a>
+    <a href="#ready">Checklist</a>
+    <span class="toggles">
+      <button class="chip" id="tPy" aria-pressed="true">Pinyin</button>
+      <button class="chip" id="tEn" aria-pressed="true">English</button>
+    </span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1 class="zh">我要結婚了</h1>
+      <p class="sub">Wedding Mandarin for the groom, getting married in Taiwan</p>
+      <p class="lead">This page walks you through the day in order, gives you the exact lines to say, and lets you practice your toast out loud until it feels natural.</p>
+      <a class="cta" href="#day">Walk through the day</a>
+      <a class="cta2" href="#toast">Build your toast</a>
+    </div>
+    <div class="xi" aria-hidden="true">囍</div>
+  </div>
+</header>
+
+<section id="day">
+  <div class="wrap">
+    <h2><span class="zh zh-h">婚禮流程</span>The day, step by step</h2>
+    <p class="intro">Every family does it a little differently, so ask your fiancée which steps her family keeps. Tap the speaker to hear each line in Taiwan Mandarin.</p>
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<section id="culture" class="alt">
+  <div class="wrap">
+    <h2><span class="zh zh-h">台灣婚禮文化</span>The customs behind each step</h2>
+    <p class="intro">Written in Chinese for reading practice. Turn off English in the top bar to read it straight through. Every family keeps a different mix of these, so use this to ask her family good questions.</p>
+    <div class="ctabs" role="tablist" id="ctabs"></div>
+    <div id="cpanel"></div>
+  </div>
+</section>
+
+<section id="parents">
+  <div class="wrap">
+    <h2><span class="zh zh-h">跟岳父岳母說話</span>Talking with her parents</h2>
+    <p class="intro">Before the wedding, call them 伯父 and 伯母, and use the polite 您 instead of 你. After the wedding, call them 爸 and 媽, just like your wife does. Her father is a doctor, so other guests may call him 醫生 (for example 林醫生). You still call him 伯父, then 爸.</p>
+    <div class="phrases" id="parentPhrases"></div>
+
+    <h3>At the banquet</h3>
+    <div class="phrases" id="banquetPhrases"></div>
+
+    <h3>Blessings you will hear (just smile and say 謝謝！)</h3>
+    <div class="phrases" id="blessings"></div>
+
+    <h3>Her family: what to call everyone</h3>
+    <p class="intro" style="margin-bottom:12px">Once you are married, you call her relatives the same way she does. Because she is the youngest, everyone in her generation is older than her, so you call her siblings by their big-sibling titles too. Ask her for each person's title before the day.</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th></th><th>Title</th><th>Pinyin</th><th>Who</th></tr></thead>
+        <tbody id="family"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="words" class="alt">
+  <div class="wrap">
+    <h2><span class="zh zh-h">生詞</span>Wedding words</h2>
+    <p class="intro">All 44 words from Lesson 5, 吃喜酒, with an example sentence from your own wedding day. Turn off pinyin or English in the top bar to test yourself.</p>
+    <div class="vocab-tabs" role="tablist" id="vtabs"></div>
+    <div class="vgrid" id="vgrid"></div>
+  </div>
+</section>
+
+<section id="grammar">
+  <div class="wrap">
+    <h2><span class="zh zh-h">語法</span>Five patterns you will actually use</h2>
+    <p class="intro">The grammar from Lesson 5, rewritten around the wedding. Open each one to see how it works.</p>
+    <div id="gramList"></div>
+  </div>
+</section>
+
+<section id="toast" class="alt">
+  <div class="wrap">
+    <h2><span class="zh zh-h">敬酒詞</span>Build your toast</h2>
+    <p class="intro">At some point someone will hand you a microphone. Pick a line for each part, add your names, and practice it until you can say it without looking.</p>
+    <div class="builder">
+      <div id="builderForm">
+        <div class="field">
+          <label class="lab" for="nameHim">Your name in Chinese (or English)</label>
+          <input type="text" id="nameHim" placeholder="例如：大衛">
+        </div>
+        <div class="field">
+          <label class="lab" for="nameHer">Your fiancée's name</label>
+          <input type="text" id="nameHer" placeholder="例如：美玲">
+        </div>
+        <div id="builderParts"></div>
+      </div>
+      <div class="speech" aria-live="polite">
+        <h3>Your toast</h3>
+        <div id="speechOut"></div>
+        <div class="row">
+          <button class="btn" id="playToast">Play the whole toast</button>
+          <button class="btn ghost" style="color:#fff;border-color:#fff" id="slowToast">Play slowly</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="practice">
+  <div class="wrap">
+    <h2><span class="zh zh-h">練習</span>Practice</h2>
+    <p class="intro">A quick quiz on the lines and grammar, plus flashcards for the vocabulary.</p>
+    <div class="practice-grid">
+      <div class="panel">
+        <h3 style="margin-top:0">Quiz</h3>
+        <div id="quiz"></div>
+      </div>
+      <div class="panel">
+        <h3 style="margin-top:0">Flashcards</h3>
+        <div class="flash" id="flash" tabindex="0" role="button" aria-label="Flip card">
+          <div class="flash-inner">
+            <div class="face front"><div class="hz" id="fHz"></div><div class="hint">Tap to flip</div></div>
+            <div class="face back"><div class="p" id="fPy"></div><div class="m" id="fEn"></div></div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn ghost" id="fPrev">Previous</button>
+          <span class="progress" id="fCount"></span>
+          <button class="btn ghost" id="fSay">Hear it</button>
+          <button class="btn" id="fNext">Next</button>
+        </div>
+        <div class="row"><button class="btn ghost" id="fShuffle">Shuffle deck</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ready" class="alt">
+  <div class="wrap">
+    <h2><span class="zh zh-h">準備好了嗎？</span>Before you fly</h2>
+    <p class="done-count" id="doneCount"></p>
+    <ul class="checklist" id="checklist"></ul>
+
+    <h3>Red envelope basics</h3>
+    <div class="tips">
+      <div><h4>Even numbers</h4><p>Wedding 紅包 amounts are usually even. Amounts with 6 or 8 are popular.</p></div>
+      <div><h4>Skip the 4</h4><p>四 sounds like 死 (death), so avoid amounts like 4,000.</p></div>
+      <div><h4>You give some too</h4><p>The groom often brings 紅包 for the door games, the emcee, and helpers. Ask her family how many to prepare.</p></div>
+      <div><h4>New bills</h4><p>Use crisp new bills from the bank. It shows you prepared for a happy occasion.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="zh">祝你們百年好合！</span> Based on 當代中文課程 Book 2, Lesson 5, 吃喜酒. Audio uses your device's built-in Mandarin voice.
+  </div>
+</footer>
+
+<script>
+const ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>';
+
+/* ---------- speech ---------- */
+let zhVoice=null;
+function pickVoice(){
+  try{
+    const vs=speechSynthesis.getVoices();
+    zhVoice=vs.find(v=>/zh[-_]TW/i.test(v.lang))||vs.find(v=>/zh[-_]HK/i.test(v.lang)&&false)||vs.find(v=>/^zh/i.test(v.lang))||null;
+  }catch(e){}
+}
+if('speechSynthesis' in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice;}
+function speak(text,rate){
+  if(!('speechSynthesis' in window)){alert('Audio is not available in this browser.');return;}
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text.replace(/_+/g,''));
+  u.lang=zhVoice?zhVoice.lang:'zh-TW'; if(zhVoice)u.voice=zhVoice;
+  u.rate=rate||0.85; speechSynthesis.speak(u);
+}
+function sayBtn(text,label){return `<button class="say" data-say="${text.replace(/"/g,'&quot;')}" aria-label="Hear: ${label||text}">${ICON}</button>`}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-say]');if(b)speak(b.dataset.say)});
+
+/* ---------- toggles ---------- */
+function bindToggle(id,cls){
+  const b=document.getElementById(id);
+  b.addEventListener('click',()=>{const on=b.getAttribute('aria-pressed')==='true';b.setAttribute('aria-pressed',String(!on));document.body.classList.toggle(cls,on);});
+}
+bindToggle('tPy','hide-py');bindToggle('tEn','hide-en');
+
+
+/* ---------- illustrations ---------- */
+const R='#A8102A',RD='#7A0A1E',GD='#D4AF4F',SK='#F2C9A5',W='#FFFFFF',GR='#4E8B5F';
+const wrapSVG=(label,inner)=>`<svg class="ill" viewBox="0 0 320 200" role="img" aria-label="${label}" xmlns="http://www.w3.org/2000/svg"><rect class="bg" width="320" height="200" rx="14"/>${inner}</svg>`;
+const ILL={
+ almanac:wrapSVG('An open farmer\'s almanac with an auspicious date circled',`
+  <path d="M160 58 Q115 46 72 56 V160 Q115 150 160 162 Z" fill="${W}" class="ink" stroke-width="2.5"/>
+  <path d="M160 58 Q205 46 248 56 V160 Q205 150 160 162 Z" fill="${W}" class="ink" stroke-width="2.5"/>
+  ${[88,102,116,130,144].map(x=>`<line x1="${x}" y1="70" x2="${x}" y2="${x%28===0?140:120}" stroke="${RD}" stroke-width="3" stroke-linecap="round" opacity=".55"/>`).join('')}
+  <circle cx="204" cy="104" r="30" fill="none" stroke="${R}" stroke-width="4"/>
+  <text x="204" y="117" text-anchor="middle" font-family="Noto Serif TC,serif" font-weight="900" font-size="36" fill="${R}">吉</text>
+  <path d="M268 30 a16 16 0 1 0 12 26 a12 12 0 1 1 -12 -26z" fill="${GD}"/>
+  <circle cx="40" cy="40" r="3" fill="${GD}"/><circle cx="290" cy="150" r="3" fill="${GD}"/>`),
+ engage:wrapSVG('A tray of wedding cake boxes, sweet tea, and a ring',`
+  <ellipse cx="130" cy="160" rx="100" ry="18" fill="${RD}"/>
+  <rect x="62" y="96" width="70" height="56" rx="4" fill="${R}"/><rect x="94" y="96" width="6" height="56" fill="${GD}"/>
+  <rect x="120" y="70" width="70" height="82" rx="4" fill="${R}"/><rect x="152" y="70" width="6" height="82" fill="${GD}"/>
+  <text x="155" y="118" text-anchor="middle" font-family="Noto Serif TC,serif" font-weight="900" font-size="26" fill="${GD}">囍</text>
+  <path d="M208 132 h36 l-5 26 h-26z" fill="${W}" class="ink" stroke-width="2"/><path d="M252 132 h36 l-5 26 h-26z" fill="${W}" class="ink" stroke-width="2"/>
+  <path d="M220 124 q6 -10 0 -20 M232 124 q6 -10 0 -20 M266 124 q6 -10 0 -20" fill="none" stroke="${GD}" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="262" cy="62" r="14" fill="none" stroke="${GD}" stroke-width="5"/><path d="M256 46 l6 -8 l6 8z" fill="${W}" class="ink" stroke-width="1.5"/>
+  <path d="M290 40 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3z" fill="${GD}"/>`),
+ car:wrapSVG('A wedding car with sugarcane tied on and a red bow',`
+  <path d="M40 90 L250 40" stroke="${GR}" stroke-width="7" stroke-linecap="round"/>
+  ${[70,110,150,190].map(x=>`<line x1="${x}" y1="${90-(x-40)*0.238-4}" x2="${x}" y2="${90-(x-40)*0.238+4}" stroke="#2F5F3E" stroke-width="3"/>`).join('')}
+  <path d="M250 40 q18 -18 34 -10 M250 40 q24 -4 30 12 M250 40 q6 -22 22 -24" fill="none" stroke="${GR}" stroke-width="4" stroke-linecap="round"/>
+  <path d="M44 150 V124 Q48 108 70 104 L104 78 Q112 72 124 72 H206 Q218 72 226 80 L252 104 Q280 108 284 124 V150 Z" fill="${W}" class="ink" stroke-width="2.5"/>
+  <path d="M112 102 L128 84 H164 V102Z M174 84 H204 L220 102 H174Z" fill="#CFE0EA" class="ink" stroke-width="2"/>
+  <circle cx="96" cy="152" r="18" class="inkf"/><circle cx="96" cy="152" r="7" fill="#999"/>
+  <circle cx="236" cy="152" r="18" class="inkf"/><circle cx="236" cy="152" r="7" fill="#999"/>
+  <path d="M258 118 l-16 -10 v20z M258 118 l16 -10 v20z" fill="${R}"/><circle cx="258" cy="118" r="5" fill="${RD}"/>
+  <path d="M258 122 l-6 20 M258 122 l6 20" stroke="${R}" stroke-width="3"/>`),
+ umbrella:wrapSVG('The bride leaving home under a black umbrella held by an elder',`
+  <path d="M90 78 Q160 18 230 78 Z" class="inkf"/><path d="M90 78 q17.5 -10 35 0 q17.5 -10 35 0 q17.5 -10 35 0 q17.5 -10 35 0" fill="none" class="ink" stroke-width="3"/>
+  <line x1="160" y1="40" x2="160" y2="30" class="ink" stroke-width="3"/>
+  <path d="M232 78 Q246 60 236 40" fill="none" stroke="#7a5a3a" stroke-width="4"/>
+  <line x1="160" y1="78" x2="236" y2="130" stroke="#555" stroke-width="3"/>
+  <circle cx="160" cy="104" r="16" fill="${SK}"/><path d="M142 100 Q160 80 178 100 L186 150 L134 150Z" fill="${W}" opacity=".9" class="ink" stroke-width="1.5"/>
+  <circle cx="160" cy="104" r="15" fill="${SK}"/><circle cx="154" cy="102" r="1.8" class="inkf"/><circle cx="166" cy="102" r="1.8" class="inkf"/>
+  <path d="M154 111 q6 4 12 0" fill="none" stroke="${RD}" stroke-width="2" stroke-linecap="round"/>
+  <path d="M136 124 L118 184 H202 L184 124 Q160 116 136 124Z" fill="${W}" class="ink" stroke-width="2"/>
+  <circle cx="150" cy="140" r="5" fill="${R}"/><circle cx="160" cy="138" r="5" fill="${R}"/><circle cx="170" cy="140" r="5" fill="${R}"/>
+  <circle cx="252" cy="116" r="14" fill="${SK}"/><path d="M238 110 q14 -16 28 0" fill="#bbb"/>
+  <path d="M236 132 L230 184 H276 L270 132 Q253 124 236 132Z" fill="${RD}"/>`),
+ table:wrapSVG('A round banquet table seen from above, with a whole fish in the center',`
+  ${Array.from({length:10},(_,i)=>{const a=i*Math.PI/5;return `<circle cx="${160+82*Math.cos(a)}" cy="${100+62*Math.sin(a)}" r="11" fill="${R}"/>`}).join('')}
+  <ellipse cx="160" cy="100" rx="70" ry="52" fill="${W}" class="ink" stroke-width="2.5"/>
+  <ellipse cx="160" cy="100" rx="30" ry="22" fill="${GD}" opacity=".35"/>
+  <path d="M140 100 Q156 86 174 100 Q156 114 140 100Z" fill="#E48A5B"/><path d="M174 100 l12 -8 v16z" fill="#E48A5B"/><circle cx="147" cy="98" r="1.8" class="inkf"/>
+  ${Array.from({length:10},(_,i)=>{const a=i*Math.PI/5;return `<circle cx="${160+56*Math.cos(a)}" cy="${100+40*Math.sin(a)}" r="5" fill="none" stroke="${RD}" stroke-width="1.5"/>`}).join('')}
+  <circle cx="126" cy="80" r="8" fill="${R}" opacity=".75"/><circle cx="196" cy="120" r="8" fill="#E9D8A6"/><circle cx="196" cy="80" r="8" fill="${GR}" opacity=".7"/><circle cx="124" cy="120" r="8" fill="#E9D8A6"/>`),
+ toast:wrapSVG('Two wine glasses raised in a toast',`
+  <g transform="rotate(-14 130 110)"><path d="M106 50 h48 q2 42 -24 50 q-26 -8 -24 -50z" fill="${W}" class="ink" stroke-width="2.5"/><path d="M109 70 h42 q-3 26 -21 30 q-18 -4 -21 -30z" fill="${R}"/><line x1="130" y1="100" x2="130" y2="150" class="ink" stroke-width="3"/><line x1="112" y1="150" x2="148" y2="150" class="ink" stroke-width="3"/></g>
+  <g transform="rotate(14 190 110)"><path d="M166 50 h48 q2 42 -24 50 q-26 -8 -24 -50z" fill="${W}" class="ink" stroke-width="2.5"/><path d="M169 70 h42 q-3 26 -21 30 q-18 -4 -21 -30z" fill="${R}"/><line x1="190" y1="100" x2="190" y2="150" class="ink" stroke-width="3"/><line x1="172" y1="150" x2="208" y2="150" class="ink" stroke-width="3"/></g>
+  <path d="M160 22 l3 9 l9 3 l-9 3 l-3 9 l-3 -9 l-9 -3 l9 -3z" fill="${GD}"/>
+  <path d="M140 30 l-8 -8 M180 30 l8 -8 M160 16 v-8" stroke="${GD}" stroke-width="3" stroke-linecap="round"/>`),
+ candy:wrapSVG('The couple at the door with a tray of wedding candy',`
+  <rect x="30" y="30" width="80" height="150" fill="${RD}"/><rect x="40" y="40" width="60" height="140" fill="${R}"/>
+  <text x="70" y="115" text-anchor="middle" font-family="Noto Serif TC,serif" font-weight="900" font-size="34" fill="${GD}">囍</text>
+  <circle cx="170" cy="70" r="16" fill="${SK}"/><path d="M154 64 q16 -20 32 0" class="inkf"/>
+  <path d="M150 92 L144 184 H196 L190 92 Q170 84 150 92Z" class="inkf"/><path d="M166 92 l4 10 l4 -10z" fill="${R}"/>
+  <circle cx="240" cy="72" r="16" fill="${SK}"/><path d="M222 70 q18 -26 36 0 l4 18 q-22 -8 -44 0z" fill="#3a2a22"/>
+  <path d="M220 94 L206 184 H274 L260 94 Q240 86 220 94Z" fill="${R}"/>
+  <ellipse cx="205" cy="118" rx="44" ry="10" fill="${GD}"/>
+  ${[[182,112,R],[196,108,GD],[210,111,W],[224,108,R],[192,116,W],[216,116,R]].map(([x,y,c])=>`<g><path d="M${x-8} ${y} l-5 -4 v8z M${x+8} ${y} l5 -4 v8z" fill="${c}" stroke="${RD}" stroke-width=".8"/><ellipse cx="${x}" cy="${y}" rx="8" ry="5" fill="${c}" stroke="${RD}" stroke-width="1"/></g>`).join('')}`),
+ house:wrapSVG('Her family home with red couplets and lanterns',`
+  <path d="M60 90 L160 36 L260 90Z" fill="${RD}"/><rect x="78" y="90" width="164" height="94" fill="${W}" class="ink" stroke-width="2.5"/>
+  <rect x="140" y="118" width="40" height="66" fill="${R}"/><circle cx="173" cy="152" r="2.5" fill="${GD}"/>
+  <rect x="124" y="112" width="10" height="66" fill="${R}"/><rect x="186" y="112" width="10" height="66" fill="${R}"/><rect x="138" y="100" width="44" height="10" fill="${R}"/>
+  <rect x="94" y="112" width="24" height="24" fill="#CFE0EA" class="ink" stroke-width="2"/><rect x="202" y="112" width="24" height="24" fill="#CFE0EA" class="ink" stroke-width="2"/>
+  <line x1="98" y1="90" x2="98" y2="98" class="ink" stroke-width="2"/><ellipse cx="98" cy="108" rx="10" ry="12" fill="${R}"/><rect x="94" y="119" width="8" height="4" fill="${GD}"/>
+  <line x1="222" y1="90" x2="222" y2="98" class="ink" stroke-width="2"/><ellipse cx="222" cy="108" rx="10" ry="12" fill="${R}"/><rect x="218" y="119" width="8" height="4" fill="${GD}"/>
+  <path d="M270 150 q10 -30 20 0 q-10 8 -20 0z" fill="${GR}"/><path d="M30 160 q10 -26 20 0 q-10 8 -20 0z" fill="${GR}"/>`),
+ envelopes:wrapSVG('A fan of red envelopes',`
+  ${[-18,0,18].map((r,i)=>`<g transform="rotate(${r} 160 170)"><rect x="126" y="44" width="68" height="112" rx="6" fill="${i===1?R:RD}"/><path d="M126 50 Q160 84 194 50" fill="none" stroke="${GD}" stroke-width="2"/><text x="160" y="124" text-anchor="middle" font-family="Noto Serif TC,serif" font-weight="900" font-size="30" fill="${GD}">囍</text></g>`).join('')}
+  <path d="M60 50 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3z" fill="${GD}"/><path d="M262 140 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3z" fill="${GD}"/>`),
+ broken:wrapSVG('A broken cup turned into a blessing',`
+  <path d="M70 110 h50 l-4 40 h-24z" fill="${W}" class="ink" stroke-width="2.5" transform="rotate(-12 95 130)"/>
+  <path d="M130 118 l20 -6 l6 30 l-18 6z" fill="${W}" class="ink" stroke-width="2.5"/>
+  <path d="M100 160 l12 -4 l4 10 l-12 4z" fill="${W}" class="ink" stroke-width="2"/>
+  <path d="M84 104 l6 -6 M150 104 l4 -8 M122 98 v-10" stroke="${GD}" stroke-width="3" stroke-linecap="round"/>
+  <text x="228" y="92" text-anchor="middle" font-family="Noto Serif TC,serif" font-weight="900" font-size="30" fill="${R}">歲歲</text>
+  <text x="228" y="132" text-anchor="middle" font-family="Noto Serif TC,serif" font-weight="900" font-size="30" fill="${R}">平安</text>
+  <path d="M180 40 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3z" fill="${GD}"/>`)
+};
+
+/* ---------- timeline ---------- */
+const steps=[
+  {ill:'engage',zh:'提親・訂婚',py:'tíqīn · dìnghūn',en:'Proposal visit and engagement',
+   d:'Since you two live in the US, her parents will host the 提親 at their home. You (and your family, if they can come) visit formally to ask for her hand and talk through the date, bride price, and banquet plans. Couples living abroad often combine 提親 and 訂婚 into one trip. At the engagement, her family sends 喜餅 to relatives to share the news.',
+   l:'伯父、伯母，我今天來，是想正式向你們提親。',lp:'Bófù, bómǔ, wǒ jīntiān lái, shì xiǎng zhèngshì xiàng nǐmen tíqīn.',le:'Uncle, Auntie, I have come today to formally ask for your daughter\'s hand.'},
+  {ill:'car',zh:'迎娶',py:'yíngqǔ',en:'Picking up the bride',
+   d:'On the wedding morning you and your groomsmen go to her home. Her bridesmaids may block the door with games and challenges, and you pay your way in with 紅包 and good humor.',
+   l:'請開門！紅包在這裡！',lp:'Qǐng kāimén! Hóngbāo zài zhèlǐ!',le:'Please open the door! The red envelopes are right here!'},
+  {ill:'umbrella',zh:'拜別父母',py:'bàibié fùmǔ',en:'Saying goodbye to her parents',
+   d:'Before you leave together, you both bow to her parents and thank them. This is the emotional moment. In some families her mother splashes a little water after the car, and she tosses a fan out the window, both symbols of starting a new life.',
+   l:'伯父、伯母，謝謝你們把最小的女兒交給我，我會好好照顧她。',lp:'Bófù, bómǔ, xièxie nǐmen bǎ zuì xiǎo de nǚ\'ér jiāo gěi wǒ, wǒ huì hǎohǎo zhàogù tā.',le:'Uncle, Auntie, thank you for entrusting your youngest daughter to me. I will take good care of her.'},
+  {ill:'table',zh:'喜宴',py:'xǐyàn',en:'The wedding banquet',
+   d:'Round tables of ten, many courses, and a lot of noise. Guests hand their 紅包 in at the reception table. The bride usually changes into two or three different gowns during the evening.',
+   l:'謝謝大家今天來參加我們的婚禮。',lp:'Xièxie dàjiā jīntiān lái cānjiā wǒmen de hūnlǐ.',le:'Thank you, everyone, for coming to our wedding today.'},
+  {ill:'toast',zh:'敬酒',py:'jìngjiǔ',en:'Toasting every table',
+   d:'You, the bride, and often both sets of parents walk to every table to toast. Short and warm is perfect. You do not need to finish your glass every time.',
+   l:'我敬大家一杯！乾杯！',lp:'Wǒ jìng dàjiā yì bēi! Gānbēi!',le:'A toast to everyone! Cheers!'},
+  {ill:'candy',zh:'送客',py:'sòngkè',en:'Seeing guests off',
+   d:'At the end you stand at the door with a tray of 喜糖 (wedding candy) and thank every guest as they leave. Expect a lot of photos.',
+   l:'請吃喜糖！謝謝你們來，路上小心。',lp:'Qǐng chī xǐtáng! Xièxie nǐmen lái, lùshang xiǎoxīn.',le:'Please take some wedding candy! Thanks for coming, get home safe.'},
+  {ill:'house',zh:'歸寧',py:'guīníng',en:'Visiting her family as a married couple',
+   d:'Traditionally the couple returns to her family home a few days later. Today many families fold this into the wedding day or the next day.',
+   l:'爸、媽，我們回來了！',lp:'Bà, mā, wǒmen huílái le!',le:'Dad, Mom, we are back!'}
+];
+document.getElementById('timeline').innerHTML=steps.map(s=>`
+  <li><div class="t-grid"><div><div class="t-head"><span class="t-zh">${s.zh}</span><span class="py">${s.py}</span><span class="t-en">${s.en}</span></div>
+  <p>${s.d}</p>
+  <div class="line-box">${sayBtn(s.l,s.le)}<div><div class="zh">${s.l}</div><div class="py">${s.lp}</div><div class="en">${s.le}</div></div></div></div>${ILL[s.ill]}</div></li>`).join('');
+
+/* ---------- phrases ---------- */
+const parentP=[
+  ['伯父、伯母好！','Bófù, bómǔ hǎo!','Hello, Uncle and Auntie! (before the wedding)'],
+  ['這是一點小心意，請收下。','Zhè shì yìdiǎn xiǎo xīnyì, qǐng shōuxià.','This is a small gift, please accept it.'],
+  ['我的中文還說得不夠好，請多包涵。','Wǒ de Zhōngwén hái shuō de bú gòu hǎo, qǐng duō bāohán.','My Chinese is still not good enough, please bear with me.','還'],
+  ['我會好好照顧她。','Wǒ huì hǎohǎo zhàogù tā.','I will take good care of her.'],
+  ['等我們結婚以後，我就叫你們爸、媽。','Děng wǒmen jiéhūn yǐhòu, wǒ jiù jiào nǐmen bà, mā.','Once we are married, I will call you Dad and Mom.','等…就'],
+  ['等你們回北加州的時候，我們就去看你們。','Děng nǐmen huí Běi Jiāzhōu de shíhou, wǒmen jiù qù kàn nǐmen.','Once you are back in Northern California, we will come visit you.','等…就'],
+  ['伯父，您工作那麼忙，謝謝您特地安排時間。','Bófù, nín gōngzuò nàme máng, xièxie nín tèdì ānpái shíjiān.','Uncle, you are so busy with work. Thank you for making the time.'],
+  ['我知道她是你們最小的女兒，你們一定很捨不得。','Wǒ zhīdào tā shì nǐmen zuì xiǎo de nǚ\'ér, nǐmen yídìng hěn shěbudé.','I know she is your youngest daughter. It must be hard to let her go.'],
+  ['我會常常帶她回家看你們。','Wǒ huì chángcháng dài tā huí jiā kàn nǐmen.','I will bring her home to see you often.','Multiple verbs'],
+  ['爸、媽，我敬你們一杯。','Bà, mā, wǒ jìng nǐmen yì bēi.','Dad, Mom, a toast to you. (after the wedding)']
+];
+const banquetP=[
+  ['我帶你們去你們的座位吧！','Wǒ dài nǐmen qù nǐmen de zuòwèi ba!','Let me take you to your seats!','Multiple verbs'],
+  ['請慢用。','Qǐng màn yòng.','Please enjoy your meal.'],
+  ['隨意，隨意！','Suíyì, suíyì!','Drink as much as you like! (no need to finish the glass)'],
+  ['謝謝你們的祝福。','Xièxie nǐmen de zhùfú.','Thank you for your blessings.'],
+  ['我想說幾句話。','Wǒ xiǎng shuō jǐ jù huà.','I would like to say a few words.'],
+  ['客人還沒到齊，我們再等一會兒。','Kèrén hái méi dào qí, wǒmen zài děng yìhuǐr.','Not all the guests are here yet, let us wait a moment.','還'],
+  ['我乾杯，您隨意。','Wǒ gānbēi, nín suíyì.','I will finish mine, you drink as you like. (to elders)','進階'],
+  ['招待不周，請多包涵。','Zhāodài bù zhōu, qǐng duō bāohán.','Forgive us if we have not taken good care of you. (polite, at send-off)','進階'],
+  ['歲歲平安！','Suìsuì píng\'ān!','Peace year after year! (when something breaks)','進階']
+];
+const bless=[
+  ['恭喜恭喜！','Gōngxǐ gōngxǐ!','Congratulations!'],
+  ['新婚快樂！','Xīnhūn kuàilè!','Happy wedding!'],
+  ['百年好合！','Bǎinián hǎohé!','May your marriage last a hundred years!'],
+  ['早生貴子！','Zǎoshēng guìzǐ!','May you have a baby soon! (yes, grandma will say this)'],
+  ['白頭偕老！','Báitóu xiélǎo!','May you grow old together!'],
+  ['永浴愛河！','Yǒng yù àihé!','May you always be in love!'],
+  ['郎才女貌！','Lángcái nǚmào!','Talented groom, beautiful bride!'],
+  ['天作之合！','Tiānzuò zhī hé!','A match made in heaven!'],
+  ['永結同心！','Yǒngjié tóngxīn!','May you always be of one heart!']
+];
+function renderPhrases(id,arr){
+  document.getElementById(id).innerHTML=arr.map(p=>`<div class="phrase">${sayBtn(p[0],p[2])}<div><div class="zh">${p[0]}${p[3]?`<span class="tag">${p[3]}</span>`:''}</div><div class="py">${p[1]}</div><div class="en">${p[2]}</div></div></div>`).join('');
+}
+renderPhrases('parentPhrases',parentP);renderPhrases('banquetPhrases',banquetP);renderPhrases('blessings',bless);
+
+const fam=[
+  ['爸、媽','bà, mā','Her parents, after the wedding'],
+  ['伯父、伯母','bófù, bómǔ','Her parents, before the wedding'],
+  ['阿公、阿嬤','āgōng, āmà','Her grandparents (common in Taiwan)'],
+  ['外公、外婆','wàigōng, wàipó',"Her mother's parents (some families)"],
+  ['舅舅','jiùjiu',"Her mother's brother"],
+  ['阿姨','āyí',"Her mother's sister"],
+  ['伯伯、叔叔','bóbo, shúshu',"Her father's older / younger brother"],
+  ['姑姑','gūgu',"Her father's sister"],
+  ['大姊、二姊','dàjiě, èrjiě','Her older sisters, by birth order'],
+  ['大哥、二哥','dàgē, èrgē','Her older brothers, by birth order'],
+  ['姊夫','jiěfu',"Her older sister's husband"],
+  ['大嫂','dàsǎo',"Her oldest brother's wife"]
+];
+document.getElementById('family').innerHTML=fam.map(f=>`<tr><td>${sayBtn(f[0],f[2])}</td><td class="zh">${f[0]}</td><td class="py">${f[1]}</td><td class="en">${f[2]}</td></tr>`).join('');
+
+/* ---------- vocab ---------- */
+const V={
+ 'People':[
+  ['新娘','xīnniáng','N','bride','新娘今天看起來好漂亮！','The bride looks so beautiful today!'],
+  ['新郎','xīnláng','N','bridegroom','新郎穿著黑西裝，好帥。','The groom is wearing a black suit. So handsome.'],
+  ['新人','xīnrén','N','newlyweds (only at a wedding)','請大家歡迎新人進場！','Everyone, please welcome the newlyweds!'],
+  ['客人','kèrén','N','guest','今天的客人有兩百多位。','There are over two hundred guests today.'],
+  ['親戚','qīnqī','N','relatives','她家的親戚都從南部來了。','Her relatives all came up from the south.'],
+  ['大人','dàrén','N','adult','大人坐這桌，小孩坐那桌。','Adults sit at this table, kids at that one.'],
+  ['小孩','xiǎohái','N','child, children','小孩跑來跑去，好熱鬧。','Kids are running around. So lively.']
+ ],
+ 'The banquet':[
+  ['喜酒','xǐjiǔ','N','wedding banquet','下個月請你來喝喜酒！','Come to our wedding banquet next month!'],
+  ['喜宴','xǐyàn','N','wedding banquet','喜宴晚上六點開始。','The banquet starts at six in the evening.'],
+  ['婚禮','hūnlǐ','N','wedding ceremony','我們的婚禮在台灣。','Our wedding is in Taiwan.'],
+  ['喜事','xǐshì','N','an auspicious occasion','結婚是家裡的大喜事。','A wedding is a big happy event for the family.'],
+  ['結婚','jiéhūn','Vp-sep','to get married','我們下個月在台灣結婚。','We are getting married in Taiwan next month.'],
+  ['日子','rìzi','N','day','她爸媽找了一個好日子。','Her parents picked an auspicious day.'],
+  ['參加','cānjiā','V','to attend','謝謝你們來參加我們的婚禮。','Thank you for coming to our wedding.'],
+  ['請客','qǐngkè','V-sep','to host a banquet, to treat','結婚的時候，新人要請客。','Newlyweds host a banquet for their wedding.'],
+  ['慶祝','qìngzhù','V','to celebrate','大家一起慶祝我們的喜事。','Everyone celebrates our happy day together.'],
+  ['敬酒','jìngjiǔ','V-sep','to make a toast','我們得去每一桌敬酒。','We have to toast at every table.'],
+  ['座位','zuòwèi','N','seat','我帶你們去你們的座位吧！','Let me take you to your seats!'],
+  ['熱鬧','rènào','Vs','lively, bustling','台灣的喜宴很熱鬧。','Taiwanese wedding banquets are very lively.']
+ ],
+ 'Gifts and blessings':[
+  ['紅包','hóngbāo','N','red envelope with cash gift','客人送紅包給新人。','Guests give red envelopes to the couple.'],
+  ['送','sòng','V','to give (a gift); to see off','喜宴結束，我們在門口送客人。','After the banquet we see the guests off at the door.'],
+  ['糖','táng','N','candy','送客的時候，我們給客人糖。','When guests leave, we give them candy.'],
+  ['恭喜','gōngxǐ','V','to congratulate','恭喜你們！','Congratulations to you both!'],
+  ['祝福','zhùfú','V','to give blessings to','謝謝大家的祝福。','Thank you all for your blessings.'],
+  ['句','jù','M','measure word for sentences','我想說幾句話。','I would like to say a few words.'],
+  ['話','huà','N','words, speech','請新郎說幾句話。','Groom, please say a few words.'],
+  ['百年好合','bǎinián hǎohé','','a long, happy marriage','祝你們百年好合！','Wishing you a long, happy marriage!'],
+  ['早生貴子','zǎoshēng guìzǐ','','may you soon have a child','阿嬤說：「早生貴子喔！」','Grandma says, "Have a baby soon!"']
+ ],
+ 'Looking sharp':[
+  ['西裝','xīzhuāng','N','(western) suit','我買了一套新西裝。','I bought a new suit.'],
+  ['禮服','lǐfú','N','formal attire, gown','新娘晚上要換三件禮服。','The bride will change into three gowns tonight.'],
+  ['件','jiàn','M','measure word for clothing','這件禮服真好看。','This gown is really beautiful.'],
+  ['正式','zhèngshì','Vs','formal','喜宴要穿得正式一點。','Dress a bit formally for the banquet.'],
+  ['白','bái','Vs','white','新娘穿著白色的婚紗。','The bride is wearing a white wedding dress.'],
+  ['帥','shuài','Vs','handsome','你今天好帥！','You look so handsome today!'],
+  ['看起來','kàn qǐlái','','to look, to seem','你看起來有一點緊張。','You look a little nervous.'],
+  ['照相機','zhàoxiàngjī','N','camera','朋友拿著照相機到處照相。','Friends walk around taking photos with cameras.'],
+  ['手','shǒu','N','hand','新郎拉著新娘的手進場。','The groom walks in holding the bride\'s hand.'],
+  ['站','zhàn','Vi','to stand','我們站在門口送客。','We stand at the door seeing guests off.']
+ ],
+ 'Useful extras':[
+  ['不得了','bùdéliǎo','Vs','extremely','今天熱鬧得不得了。','It is incredibly lively today.'],
+  ['另外','lìngwài','Det','another, separate','我們另外準備了一桌素菜。','We also prepared a separate vegetarian table.'],
+  ['離開','líkāi','Vp','to leave','客人離開的時候，我們給他們喜糖。','When guests leave, we give them wedding candy.'],
+  ['一會兒','yìhuǐr','','in a moment','新娘一會兒就出來。','The bride will be out in a moment.'],
+  ['有說有笑','yǒushuō yǒuxiào','','laughing and chatting','大家有說有笑，很開心。','Everyone is laughing and chatting, very happy.'],
+  ['有吃有喝','yǒuchī yǒuhē','','plenty to eat and drink','喜宴上有吃有喝。','There is plenty to eat and drink at the banquet.']
+ ],
+ '進階 Advanced':[
+  ['岳父、岳母','yuèfù, yuèmǔ','N',"wife's father / mother (formal)",'我在致詞的時候特別感謝了岳父、岳母。','In my speech I especially thanked my father- and mother-in-law.'],
+  ['娘家','niángjiā','N',"a wife's parents' home",'歸寧就是新娘結婚後第一次回娘家。','歸寧 is the bride\'s first return to her family home after the wedding.'],
+  ['聘金','pìnjīn','N','bride price','她爸媽說聘金就不用了，心意到了就好。','Her parents said the bride price is not necessary, the thought is what counts.'],
+  ['喜餅','xǐbǐng','N','wedding cakes','女方把喜餅分送給親戚朋友。',"The bride's family gives wedding cakes to relatives and friends."],
+  ['伴郎','bànláng','N','groomsman','我請了三個好朋友當伴郎。','I asked three good friends to be groomsmen.'],
+  ['主桌','zhǔzhuō','N','head table','雙方父母都坐在主桌。','Both sets of parents sit at the head table.'],
+  ['致詞','zhìcí','V-sep','to give a speech','證婚人上台致詞以後，喜宴才正式開始。',"The banquet officially begins only after the witness gives a speech."],
+  ['捨不得','shěbudé','Vs','to be reluctant to part with','女兒出嫁，爸媽都很捨不得。','When a daughter marries, her parents find it hard to let go.'],
+  ['疼愛','téng\'ài','V','to dote on','她是家裡最小的，從小就被大家疼愛。','She is the youngest and has been doted on since she was little.'],
+  ['百忙之中','bǎimáng zhī zhōng','','in the midst of a busy schedule','謝謝大家在百忙之中來參加我們的婚禮。','Thank you all for coming despite your busy schedules.'],
+  ['多多包涵','duōduō bāohán','','please bear with me','說得不好的地方，請大家多多包涵。','Please forgive anything I say poorly.'],
+  ['先乾為敬','xiān gān wéi jìng','','I will drink first to show respect','我先乾為敬，大家隨意！','I will finish my glass first out of respect. Drink as you like!'],
+  ['郎才女貌','lángcái nǚmào','','talented groom, beautiful bride','大家都說他們郎才女貌。','Everyone says they are a perfect match.'],
+  ['歲歲平安','suìsuì píng\'ān','','peace year after year (said when something breaks)','杯子破了，阿嬤馬上說：「歲歲平安！」','The glass broke, and grandma immediately said, "Peace year after year!"']
+ ]
+};
+const vtabs=document.getElementById('vtabs'),vgrid=document.getElementById('vgrid');
+const cats=Object.keys(V);
+function showCat(c){
+  [...vtabs.children].forEach(b=>b.setAttribute('aria-selected',b.dataset.c===c));
+  vgrid.innerHTML=V[c].map(w=>`<div class="vcard"><div class="top"><div><div class="hz">${w[0]}</div><div class="py">${w[1]}</div></div>${sayBtn(w[0])}</div>
+   <div class="en">${w[2]?`<span class="pos">(${w[2]})</span> `:''}${w[3]}</div>
+   <div class="ex"><div style="display:flex;gap:8px;align-items:flex-start"><span class="zh">${w[4]}</span></div><span class="en">${w[5]}</span>
+   <button class="btn ghost" style="padding:2px 10px;font-size:13px;margin-top:6px" data-say="${w[4]}">Hear sentence</button></div></div>`).join('');
+}
+vtabs.innerHTML=cats.map(c=>`<button class="vtab" role="tab" data-c="${c}">${c} (${V[c].length})</button>`).join('');
+vtabs.addEventListener('click',e=>{const b=e.target.closest('.vtab');if(b)showCat(b.dataset.c)});
+showCat(cats[0]);
+
+/* ---------- grammar ---------- */
+const G=[
+ {p:'還',py:'hái',n:'Still, not yet',
+  b:'Use 還 with state verbs to say a situation is still true. With 沒 it means "not yet". With action verbs it can also mean "in addition".',
+  ex:[['客人<mark>還</mark>沒到齊，喜宴<mark>還</mark>不能開始。','Not all the guests are here yet, so the banquet cannot start.'],
+      ['我的中文<mark>還</mark>說得不夠流利。','My Chinese is still not fluent enough.'],
+      ['我要學敬酒的話，<mark>還</mark>要記親戚的名字。','I need to learn the toast lines, and also remember the relatives\' names.'],
+      ['<span class="adv">進階</span>雖然她家在北加州有房子，可是家裡<mark>還</mark>保留著很多台灣的習俗。','Although her family has a house in Northern California, they still keep many Taiwanese customs.']]},
+ {p:'V著',py:'V zhe',n:'Doing something in a certain manner',
+  b:'V著 describes how the main action is done: smiling while talking, standing while waiting. Different from 一邊…一邊…, which lists two separate actions. Some verbs, like 站, only work with 著.',
+  ex:[['新娘笑<mark>著</mark>跟客人說話。','The bride chats with the guests with a smile.'],
+      ['我們拿<mark>著</mark>酒杯去每一桌敬酒。','We carry our glasses to every table to toast.'],
+      ['新郎忙<mark>著</mark>招呼客人。','The groom is busy welcoming guests.'],
+      ['<span class="adv">進階</span>岳母含<mark>著</mark>眼淚，看<mark>著</mark>最小的女兒坐上禮車。','With tears in her eyes, her mother watched her youngest daughter get into the wedding car.']]},
+ {p:'V1 O V2',py:'multiple verb phrases',n:'Two verbs in one sentence',
+  b:'Chinese puts verb phrases in time order. 送朋友去機場 (take a friend to the airport) is not the same as 去機場送朋友 (go to the airport to see a friend off).',
+  ex:[['我<mark>帶</mark>你們<mark>去</mark>你們的座位吧！','Let me take you to your seats!'],
+      ['我<mark>去</mark>機場<mark>接</mark>伯父、伯母。','I am going to the airport to pick up her parents.'],
+      ['我們<mark>送</mark>客人<mark>到</mark>門口。','We walk the guests to the door.'],
+      ['<span class="adv">進階</span>媒人<mark>拿</mark>米篩<mark>遮</mark>著新娘<mark>走</mark>出家門。','The matchmaker walks the bride out of the house, shading her with a rice sieve.']]},
+ {p:'等…就…',py:'děng… jiù…',n:'Once A happens, then B',
+  b:'等 sets up the condition, 就 introduces what follows right after. Compare 再 (next in sequence) and 才 (only then).',
+  ex:[['<mark>等</mark>客人都到了，喜宴<mark>就</mark>開始了。','Once all the guests arrive, the banquet will start.'],
+      ['<mark>等</mark>我們結婚以後，我<mark>就</mark>叫你們爸、媽。','Once we are married, I will call you Dad and Mom.'],
+      ['<mark>等</mark>客人都回去了，我們<mark>就</mark>可以休息了。','Once the guests have all gone home, we can finally rest.'],
+      ['<span class="adv">進階</span><mark>等</mark>吉時一到，禮車<mark>就</mark>出發去迎娶新娘。','As soon as the auspicious hour arrives, the wedding car sets off to pick up the bride.']]},
+ {p:'V著V著，就…了',py:'V zhe V zhe, jiù… le',n:'While doing A, B happens',
+  b:'Repeat V著 to show an ongoing action, then 就…了 for something that happens in the middle of it, often unexpectedly.',
+  ex:[['大家吃<mark>著</mark>吃<mark>著</mark>，新郎、新娘<mark>就</mark>來敬酒<mark>了</mark>。','While everyone was eating, the bride and groom came over to toast.'],
+      ['我們等<mark>著</mark>等<mark>著</mark>，喜宴<mark>就</mark>開始<mark>了</mark>。','While we were waiting, the banquet began.'],
+      ['我練習<mark>著</mark>練習<mark>著</mark>，<mark>就</mark>不緊張<mark>了</mark>。','The more I practiced, the less nervous I got.'],
+      ['<span class="adv">進階</span>岳父致詞，說<mark>著</mark>說<mark>著</mark>，眼眶<mark>就</mark>紅<mark>了</mark>。','During his speech, her father\'s eyes welled up as he spoke.']]}
+];
+const strip=s=>s.replace(/<[^>]+>/g,'');
+document.getElementById('gramList').innerHTML=G.map((g,i)=>`<details class="gram"${i===0?' open':''}><summary><span class="g-pat">${g.p}</span><span class="py">${g.py}</span><span class="g-name">${g.n}</span></summary>
+ <div class="g-body"><p>${g.b}</p>${g.ex.map(x=>`<div class="g-ex">${sayBtn(strip(x[0]),x[1])}<div><span class="zh">${x[0]}</span><span class="en">${x[1]}</span></div></div>`).join('')}</div></details>`).join('');
+
+/* ---------- toast builder ---------- */
+const parts=[
+ {k:'open',t:'1. Greeting',o:[
+   ['各位親朋好友，大家好！','Gè wèi qīnpéng hǎoyǒu, dàjiā hǎo!','Dear family and friends, hello everyone!'],
+   ['爸、媽，各位長輩，大家好！','Bà, mā, gè wèi zhǎngbèi, dàjiā hǎo!','Dad, Mom, respected elders, hello everyone!'],
+   ['各位長輩、各位貴賓、各位親朋好友，大家晚安！','Gè wèi zhǎngbèi, gè wèi guìbīn, gè wèi qīnpéng hǎoyǒu, dàjiā wǎn\'ān!','Respected elders, honored guests, family and friends, good evening! (formal)']]},
+ {k:'me',t:'2. Introduce yourself',o:[
+   ['我是新郎{HIM}。','Wǒ shì xīnláng {HIM}.','I am the groom, {HIM}.'],
+   ['我是{HER}的先生，{HIM}。','Wǒ shì {HER} de xiānsheng, {HIM}.',"I am {HER}'s husband, {HIM}."]]},
+ {k:'thanks',t:'3. Thank the guests',o:[
+   ['謝謝大家今天來參加我們的婚禮。','Xièxie dàjiā jīntiān lái cānjiā wǒmen de hūnlǐ.','Thank you all for coming to our wedding today.'],
+   ['謝謝大家從很遠的地方來慶祝我們的喜事。','Xièxie dàjiā cóng hěn yuǎn de dìfang lái qìngzhù wǒmen de xǐshì.','Thank you for coming from so far to celebrate with us.'],
+   ['感謝各位在百忙之中撥冗前來，參加我們的婚禮。','Gǎnxiè gè wèi zài bǎimáng zhī zhōng bōrǒng qiánlái, cānjiā wǒmen de hūnlǐ.','Thank you all for taking time from your busy schedules to attend our wedding. (formal)']]},
+ {k:'parents',t:'4. Thank her parents',o:[
+   ['謝謝爸、媽把{HER}交給我，我會好好照顧她。','Xièxie bà, mā bǎ {HER} jiāo gěi wǒ, wǒ huì hǎohǎo zhàogù tā.','Thank you, Dad and Mom, for entrusting {HER} to me. I will take good care of her.'],
+   ['{HER}是家裡最小的女兒，謝謝爸、媽這麼多年的照顧，以後換我來照顧她。','{HER} shì jiālǐ zuì xiǎo de nǚ\'ér, xièxie bà, mā zhème duō nián de zhàogù, yǐhòu huàn wǒ lái zhàogù tā.','{HER} is the youngest daughter in the family. Thank you, Dad and Mom, for caring for her all these years. Now it is my turn.'],
+   ['謝謝爸、媽讓我成為這個家的一份子。','Xièxie bà, mā ràng wǒ chéngwéi zhège jiā de yí fènzǐ.','Thank you, Dad and Mom, for making me part of this family.'],
+   ['特別感謝岳父、岳母，願意把最疼愛的小女兒交給我。我一定會珍惜她、照顧她一輩子。','Tèbié gǎnxiè yuèfù, yuèmǔ, yuànyì bǎ zuì téng\'ài de xiǎo nǚ\'ér jiāo gěi wǒ. Wǒ yídìng huì zhēnxī tā, zhàogù tā yíbèizi.','A special thanks to my father- and mother-in-law for entrusting me with their beloved youngest daughter. I will cherish her and care for her all my life. (formal)']]},
+ {k:'lang',t:'5. A word about your Chinese',o:[
+   ['我的中文還說得不夠好，可是我會繼續學。','Wǒ de Zhōngwén hái shuō de bú gòu hǎo, kěshì wǒ huì jìxù xué.','My Chinese still is not good enough, but I will keep learning.'],
+   ['我練習著練習著，就不緊張了。','Wǒ liànxí zhe liànxí zhe, jiù bù jǐnzhāng le.','I practiced so much that I am not nervous anymore.'],
+   ['我的中文還有很多進步的空間，說得不好的地方，請大家多多包涵。','Wǒ de Zhōngwén hái yǒu hěn duō jìnbù de kōngjiān, shuō de bù hǎo de dìfang, qǐng dàjiā duōduō bāohán.','My Chinese still has plenty of room to improve, so please forgive anything I say poorly. (formal)'],
+   ['(skip this part)','','']]},
+ {k:'close',t:'6. Raise your glass',o:[
+   ['今天有吃有喝，希望大家吃得開心！我敬大家一杯，乾杯！','Jīntiān yǒu chī yǒu hē, xīwàng dàjiā chī de kāixīn! Wǒ jìng dàjiā yì bēi, gānbēi!','There is plenty to eat and drink today, enjoy! A toast to everyone, cheers!'],
+   ['我敬大家一杯，大家隨意！','Wǒ jìng dàjiā yì bēi, dàjiā suíyì!','A toast to everyone, drink as you like!'],
+   ['最後，祝大家身體健康、萬事如意。我先乾為敬，大家隨意！','Zuìhòu, zhù dàjiā shēntǐ jiànkāng, wànshì rúyì. Wǒ xiān gān wéi jìng, dàjiā suíyì!','Finally, wishing everyone good health and every success. I will drink first out of respect, please drink as you like! (formal)']]}
+];
+const bp=document.getElementById('builderParts');
+bp.innerHTML=parts.map(p=>`<fieldset class="field" style="border:0;padding:0;margin:0 0 18px"><legend class="lab">${p.t}</legend>
+ ${p.o.map((o,i)=>`<label class="choice"><input type="radio" name="${p.k}" value="${i}"${i===0?' checked':''}><span><span class="zh">${o[0].replace(/\{HIM\}/g,'___').replace(/\{HER\}/g,'___')}</span><span class="en">${o[2].replace(/\{HIM\}/g,'you').replace(/\{HER\}/g,'her')}</span></span></label>`).join('')}</fieldset>`).join('');
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function toastLines(){
+  const him=esc(document.getElementById('nameHim').value.trim()||'___');
+  const her=esc(document.getElementById('nameHer').value.trim()||'___');
+  return parts.map(p=>{const i=+document.querySelector(`input[name="${p.k}"]:checked`).value;return p.o[i];})
+   .filter(o=>o[1]).map(o=>o.map(s=>s.replace(/\{HIM\}/g,him).replace(/\{HER\}/g,her)));
+}
+function renderToast(){
+  document.getElementById('speechOut').innerHTML=toastLines().map(l=>`<p class="s-line"><span class="zh">${l[0]}</span><span class="py">${l[1]}</span><span class="en">${l[2]}</span></p>`).join('');
+}
+document.getElementById('builderForm').addEventListener('input',renderToast);
+document.getElementById('builderForm').addEventListener('change',renderToast);
+const fullToast=()=>toastLines().map(l=>l[0]).join('').replace(/&amp;/g,'&');
+document.getElementById('playToast').onclick=()=>speak(fullToast(),0.9);
+document.getElementById('slowToast').onclick=()=>speak(fullToast(),0.6);
+renderToast();
+
+
+/* ---------- culture ---------- */
+const C=[
+ {t:'看日子',ill:'almanac',pts:[
+   ['挑好日子','很多台灣家庭會請算命老師或翻農民曆，依照新人的生辰挑結婚的日子。不只是日期，連訂婚、迎娶出門和進門的時間都有「吉時」，大家會照著時間表走。','Many families consult a fortune teller or the farmer\'s almanac, based on the couple\'s birth dates. Even the times for leaving and arriving on the wedding day follow an auspicious hour.'],
+   ['避開鬼月','農曆七月是鬼月，一般人不會在這個月辦喜事，也不太搬家或買房子。','The seventh lunar month is Ghost Month. People generally avoid weddings, moving, or buying a house then.'],
+   ['婚紗照','台灣的新人幾乎都會在婚禮前幾個月拍婚紗照，有的還特地出國拍。喜宴那天，會場入口常常擺著大張婚紗照和相本，讓客人一邊等一邊看。','Nearly every Taiwanese couple takes a pre-wedding photo shoot, sometimes abroad. On the day, the big prints and albums are displayed at the banquet entrance.']],
+  terms:[['農民曆','nóngmínlì','farmer\'s almanac'],['吉時','jíshí','auspicious hour'],['鬼月','guǐyuè','Ghost Month'],['婚紗照','hūnshāzhào','pre-wedding photos']]},
+ {t:'提親・訂婚',ill:'engage',pts:[
+   ['提親','提親是男方第一次正式到女方家拜訪，談結婚的事，像日子、聘金和喜宴要怎麼辦。因為你們住在美國，這次由她爸媽在家裡主辦。男方通常會帶水果或禮盒，禮數到了最重要。','提親 is the groom side\'s first formal visit to her family to discuss the date, bride price, and banquet. Since you live in the US, her parents are hosting it at their home. Bring fruit or a gift box. Showing proper courtesy matters most.'],
+   ['一次辦完','新人住在國外的話，很多家庭會把提親、訂婚，甚至結婚安排在同一趟、同一天，省得大家來回跑。','When the couple lives abroad, many families fit the proposal, engagement, and even the wedding into one trip or one day.'],
+   ['聘禮','訂婚那天，男方要準備聘禮，像聘金、金飾和喜餅。傳統上有「六禮」或「十二禮」，數字都是雙數，代表好事成雙。','The groom\'s side brings betrothal gifts such as bride price money, gold jewelry, and wedding cakes. Traditionally there are six or twelve gifts, always an even number.'],
+   ['退聘金','聘金常分成「大聘」和「小聘」。很多女方家庭會把大聘退回去，只收小聘，表示嫁女兒不是為了錢。這件事最好先請未婚妻私下問清楚。','Bride price is often split into a large and a small portion. Many brides\' families return the large one to show the marriage is not about money. Have your fiancée ask privately first.'],
+   ['奉茶、壓茶甌','新娘會端甜茶給男方親友。大家喝完以後，要在杯子裡放一個紅包再還給她，這叫「壓茶甌」。','The bride serves sweet tea to the groom\'s relatives. When they return the cups, they place a red envelope inside. This is called 壓茶甌.'],
+   ['戴戒指','交換戒指的時候，有一個有趣的說法：新娘會把手指稍微彎起來，不讓新郎一次戴到底，意思是婚後不要被先生管得太緊。','A playful belief: when you put the ring on, she bends her finger slightly so it doesn\'t go all the way, meaning she won\'t be bossed around after marriage.'],
+   ['發喜餅','女方把喜餅送給親戚朋友，就等於告訴大家女兒要出嫁了。收到喜餅的人，通常就會來喝喜酒。','The bride\'s family gives wedding cakes to relatives and friends to announce the marriage. Receiving one is basically an invitation to the banquet.'],
+   ['誰出錢？','傳統上，聘金、喜餅和男方的喜宴由男方出錢，嫁妝和女方的訂婚宴由女方出錢。在台灣，兩家常常各辦各的喜宴，各自收自己客人的禮金。現在也有很多新人合辦一場，照雙方客人的桌數分攤費用。這件事最好在提親的時候就談清楚。','Traditionally, the groom\'s family pays for the bride price, wedding cakes, and its own banquet, and the bride\'s family pays for the dowry and the engagement banquet. In Taiwan the two families often host separate banquets, and each keeps the cash gifts from its own guests. Today many couples hold one joint banquet and split the cost by each side\'s number of tables. Best to settle this during the 提親.']],
+  terms:[['提親','tíqīn','formal proposal visit'],['訂婚宴','dìnghūnyàn','engagement banquet'],['分攤','fēntān','to split (costs)'],['聘金','pìnjīn','bride price'],['嫁妝','jiàzhuang','dowry'],['喜餅','xǐbǐng','wedding cakes'],['奉茶','fèngchá','to serve tea'],['金飾','jīnshì','gold jewelry']]},
+ {t:'迎娶',ill:'umbrella',pts:[
+   ['禮車','迎娶的禮車上常綁著帶葉子的甘蔗，代表「有頭有尾」、甜甜蜜蜜。','Wedding cars often have sugarcane tied on, leaves and all, meaning a marriage that lasts from start to finish, and sweetness.'],
+   ['進門','到了女方家，可能會有小男孩端洗臉水給你。洗完臉，要給他一個紅包。接著伴娘會堵門出題考你，過關了才能見到新娘。','At her home, a young boy may bring you a basin of water to wash your face. Give him a red envelope. Then the bridesmaids block the door with challenges.'],
+   ['拜別','出門前，新人要拜別女方父母和祖先。這是很感性的時刻，爸爸媽媽常常會掉眼淚，尤其是最小的女兒出嫁。','Before leaving, the couple bows farewell to her parents and ancestors. It is emotional, especially when the youngest daughter marries.'],
+   ['米篩和黑傘','新娘走出家門的時候，媒人或長輩會拿米篩或黑傘遮在她頭上，傳統的說法是新娘不能「見天」。','As she leaves the house, the matchmaker or an elder holds a rice sieve or black umbrella over her head. Traditionally, the bride should not be exposed to the open sky.'],
+   ['潑水、丟扇子','新娘上車以後，會從車窗丟出一把扇子，意思是把壞脾氣留在娘家。媽媽在車後潑一盆水，來自「嫁出去的女兒，潑出去的水」這句老話，不過現在大多被看成是祝福。新娘這時候不能回頭看。','From the car, she throws out a fan, leaving her bad temper behind. Her mother splashes water after the car, from the old saying about a married daughter being like spilled water, though today it is seen as a blessing. The bride should not look back.']],
+  terms:[['禮車','lǐchē','wedding car'],['堵門','dǔmén','blocking the door'],['娘家','niángjiā','the wife\'s family home'],['媒人','méirén','matchmaker'],['伴娘','bànniáng','bridesmaid'],['伴郎','bànláng','groomsman']]},
+ {t:'喜宴',ill:'table',pts:[
+   ['在哪裡辦','城市裡多半在飯店辦，鄉下常常在戶外「辦桌」，一次擺幾十桌，非常熱鬧。一桌十個人，吃的是固定的「桌菜」。','In cities, banquets are usually in hotels. In the countryside, families host an outdoor 辦桌 with dozens of tables. Each table seats ten and gets a set menu.'],
+   ['主桌','最前面的主桌坐的是新人、雙方父母和最重要的長輩。主婚人和證婚人會上台致詞，新郎也可能要說幾句話。','The head table seats the couple, both sets of parents, and the most important elders. The hosts and witnesses give speeches, and the groom may be asked to speak.'],
+   ['進場和二進','新娘常常會換兩三套禮服：穿白紗第一次進場，換晚禮服「二進」，最後再換一套出來敬酒、送客。','The bride often changes two or three times: white gown for the first entrance, an evening gown for the second entrance, and another for toasting and seeing guests off.'],
+   ['有意思的菜','菜名和菜色都有意思：全魚代表年年有餘，紅蟳米糕紅紅的很喜氣，最後的湯圓或甜湯代表圓圓滿滿。甜點和水果一上桌，客人就知道差不多可以準備走了。','Dishes carry meaning: a whole fish for abundance, red crab sticky rice for festivity, sweet soup or tangyuan for completeness. Once dessert and fruit arrive, guests know it is almost time to go.'],
+   ['敬酒的禮貌','跟長輩敬酒的時候，可以說「我乾杯，您隨意」，意思是我喝完，您不用喝完，表示尊敬。','When toasting elders, say 我乾杯，您隨意: I will finish mine, you drink as you like. It shows respect.']],
+  terms:[['辦桌','bànzhuō','outdoor banquet'],['桌菜','zhuōcài','set banquet menu'],['主桌','zhǔzhuō','head table'],['主婚人','zhǔhūnrén','wedding host'],['證婚人','zhènghūnrén','wedding witness'],['二進','èrjìn','second entrance']]},
+ {t:'禮金',ill:'envelopes',pts:[
+   ['包多少','客人的禮金大多是雙數，像三千六、六千、六千六都很常見。千萬不要有四，因為「四」聽起來像「死」。','Cash gifts are usually even numbers, like NT$3,600, 6,000, or 6,600. Never include a 4, since 四 sounds like 死.'],
+   ['收禮台','喜宴入口有收禮台，通常由雙方的親友幫忙，把每個人包多少都記在「禮金簿」上。以後輪到他們家辦喜事，就會照著這個數字包回去，甚至包多一點。','At the entrance, trusted relatives run the gift table and record every gift in a register. When those guests\' families have a wedding, you give back a similar or larger amount.'],
+   ['紅包上寫什麼','紅包袋正面可以寫「百年好合」或「恭賀新婚」，背面寫自己的名字。','Write 百年好合 or 恭賀新婚 on the front, and your name on the back.'],
+   ['新郎也要包','新郎要準備不少紅包：給媒人、伴娘、端洗臉水的小男孩、主持人，還有來幫忙的親友。最好請女方家人告訴你大概要準備幾個。','The groom prepares many red envelopes: for the matchmaker, bridesmaids, the boy with the wash basin, the emcee, and helpers. Ask her family how many to bring.']],
+  terms:[['禮金','lǐjīn','cash gift'],['禮金簿','lǐjīnbù','gift register'],['收禮台','shōulǐtái','gift table'],['恭賀新婚','gōnghè xīnhūn','congratulations on your marriage']]},
+ {t:'吉祥話與禁忌',ill:'broken',pts:[
+   ['吉祥話','除了「百年好合」和「早生貴子」，你還可能聽到「郎才女貌」、「天作之合」、「永結同心」。聽懂了，笑著說謝謝就好。','Beyond the basics, you may hear 郎才女貌 (talented groom, beautiful bride), 天作之合 (a match made in heaven), and 永結同心 (forever of one heart). Just smile and say thanks.'],
+   ['說話的禁忌','喜宴上盡量不說「散」、「離」、「分」、「破」、「死」這些字。敬酒的時候說「祝大家身體健康」，不要開不吉利的玩笑。','At the banquet, avoid words like 散 (scatter), 離 (leave), 分 (split), 破 (break), and 死 (death). Keep jokes and toasts auspicious.'],
+   ['打破東西','要是不小心打破杯子或盤子，大家會馬上說「歲歲平安」，因為「碎」跟「歲」同音，把壞事變成好話。','If a glass or plate breaks, everyone quickly says 歲歲平安, since 碎 (shatter) sounds like 歲 (year), turning bad luck into a blessing.'],
+   ['送禮的禁忌','送禮不送鐘，因為「送鐘」聽起來像「送終」。傘也不太適合，因為「傘」跟「散」同音。','Never give a clock, since 送鐘 sounds like 送終 (attending a death). Umbrellas are also avoided, since 傘 sounds like 散.']],
+  terms:[['郎才女貌','lángcái nǚmào','talented groom, beautiful bride'],['天作之合','tiānzuò zhī hé','a match made in heaven'],['永結同心','yǒngjié tóngxīn','forever of one heart'],['歲歲平安','suìsuì píng\'ān','peace year after year'],['諧音','xiéyīn','homophone']]}
+];
+const ctabs=document.getElementById('ctabs'),cpanel=document.getElementById('cpanel');
+function showC(i){
+  [...ctabs.children].forEach((b,j)=>b.setAttribute('aria-selected',j===i));
+  const c=C[i];
+  cpanel.innerHTML=`<div class="cpanel"><div><div class="c-ill">${ILL[c.ill]}</div>${c.pts.map(p=>`<div class="cpoint"><h4>${p[0]}</h4><p class="zh-p">${p[1]}</p><span class="en">${p[2]}</span><button class="btn ghost" style="padding:2px 10px;font-size:13px;margin-top:6px" data-say="${p[1]}">Hear it</button></div>`).join('')}</div>
+   <aside class="terms"><h4>Key terms</h4>${c.terms.map(t=>`<div class="term">${sayBtn(t[0],t[2])}<div><span class="zh">${t[0]}</span> <span class="py">${t[1]}</span><span class="en">${t[2]}</span></div></div>`).join('')}</aside></div>`;
+}
+ctabs.innerHTML=C.map((c,i)=>`<button class="ctab" role="tab" data-i="${i}">${c.t}</button>`).join('');
+ctabs.addEventListener('click',e=>{const b=e.target.closest('.ctab');if(b)showC(+b.dataset.i)});
+showC(0);
+
+/* ---------- quiz ---------- */
+const Q=[
+ {q:'<span class="zh">不小心打破了杯子，大家會馬上說：</span>',o:['對不起！','歲歲平安！','沒關係！','乾杯！'],a:1,e:'碎 sounds like 歲, so 歲歲平安 turns a broken glass into a blessing.'},
+ {q:'<span class="zh">新娘上車後從車窗丟扇子，是什麼意思？</span>',o:['祝客人一路平安','把壞脾氣留在娘家','告訴大家喜宴開始了','感謝媒人'],a:1,e:'丟扇子 means leaving her bad temper behind at her family home.'},
+ {q:'<span class="zh">跟長輩敬酒時，哪一句最有禮貌？</span>',o:['你乾杯，我隨意。','我們都隨便喝。','我乾杯，您隨意。','你先喝吧。'],a:2,e:'You finish yours, the elder drinks as they like. Note the polite 您.'},
+ {q:'<span class="zh">喜宴上什麼菜一出來，客人就知道差不多要結束了？</span>',o:['全魚','紅蟳米糕','冷盤','甜湯和水果'],a:3,e:'Dessert and fruit signal the banquet is winding down.'},
+ {q:'<span class="zh">為什麼不送朋友鐘當結婚禮物？</span>',o:['太貴了','「送鐘」聽起來像「送終」','鐘不好看','台灣人不用鐘'],a:1,e:'送鐘 sounds like 送終, attending someone\'s death.'},
+ {q:'Before the wedding, how do you address her parents?',o:['伯父、伯母','叔叔、阿姨','爸、媽','先生、太太'],a:0,e:'伯父、伯母 is the respectful choice. Switch to 爸、媽 after the wedding.'},
+ {q:'Her grandmother says <span class="zh">「百年好合！」</span> What do you say?',o:['不客氣！','謝謝！謝謝！','對不起！','沒關係！'],a:1,e:'Just smile and thank her. Say it twice for extra warmth.'},
+ {q:'<span class="zh">客人___沒到齊，喜宴不能開始。</span>',o:['就','還','再','才'],a:1,e:'還沒 means "not yet". The guests are still not all here.'},
+ {q:'<span class="zh">新娘笑___跟客人說話。</span>',o:['了','過','著','的'],a:2,e:'笑著 describes how she talks: smiling.'},
+ {q:'<span class="zh">___客人都到了，喜宴___開始了。</span>',o:['因為…所以','雖然…可是','等…就','一邊…一邊'],a:2,e:'等…就… : once the guests arrive, the banquet starts.'},
+ {q:'Which means "Let me take you to your seats"?',o:['我去你們的座位帶你們吧！','我帶你們去你們的座位吧！','我你們帶去座位吧！','我去帶座位你們吧！'],a:1,e:'Verb phrases follow time order: first 帶你們, then 去座位.'},
+ {q:'<span class="zh">大家吃著吃著，新郎、新娘就來___了。</span>',o:['敬酒','結婚','離開','參加'],a:0,e:'While everyone eats, the couple comes around to toast.'},
+ {q:'Which 紅包 amount should you avoid?',o:['NT$3,600','NT$6,000','NT$4,000','NT$8,800'],a:2,e:'四 sounds like 死, so skip amounts with 4.'},
+ {q:'At 送客, what do you hand guests as they leave?',o:['紅包','喜糖','喜餅','照相機'],a:1,e:'喜糖, wedding candy, usually from a tray at the door.'},
+ {q:'Someone says <span class="zh">「隨意！」</span> during the toast. It means:',o:['Bottoms up, finish it!','Drink as much as you like','Please sit down','Take a photo'],a:1,e:'隨意 lets you sip instead of finishing the glass.'}
+];
+let qi=0,score=0;
+const qEl=document.getElementById('quiz');
+function renderQ(){
+  if(qi>=Q.length){
+    qEl.innerHTML=`<p class="quiz-q">You got <strong>${score} / ${Q.length}</strong>.</p><p class="feedback">${score>=Q.length-3?'<span class="zh">太棒了！</span> You are ready for the banquet.':'Review the lines and grammar above, then try again.'}</p><div class="row"><button class="btn" id="qAgain">Try again</button></div>`;
+    document.getElementById('qAgain').onclick=()=>{qi=0;score=0;renderQ();};return;
+  }
+  const x=Q[qi];
+  qEl.innerHTML=`<p class="progress">Question ${qi+1} of ${Q.length}</p><p class="quiz-q">${x.q}</p>
+   <div class="opts">${x.o.map((o,i)=>`<button class="opt" data-i="${i}"><span class="zh">${o}</span></button>`).join('')}</div>
+   <p class="feedback" id="qFb"></p><div class="row"><span></span><button class="btn" id="qNext" disabled>Next</button></div>`;
+  qEl.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
+    const i=+b.dataset.i;qEl.querySelectorAll('.opt').forEach(o=>o.disabled=true);
+    qEl.querySelector(`.opt[data-i="${x.a}"]`).classList.add('right');
+    if(i===x.a){score++;document.getElementById('qFb').innerHTML='<strong style="color:var(--jade)">對！</strong> '+x.e;}
+    else{b.classList.add('wrong');document.getElementById('qFb').innerHTML='<strong style="color:var(--wrong)">Not quite.</strong> '+x.e;}
+    const n=document.getElementById('qNext');n.disabled=false;n.focus();
+  });
+  document.getElementById('qNext').onclick=()=>{qi++;renderQ();};
+}
+renderQ();
+
+/* ---------- flashcards ---------- */
+let deck=cats.flatMap(c=>V[c]),fi=0;
+const flash=document.getElementById('flash');
+function renderF(){
+  flash.classList.remove('flipped');const w=deck[fi];
+  document.getElementById('fHz').textContent=w[0];
+  document.getElementById('fPy').textContent=w[1];
+  document.getElementById('fEn').textContent=w[3];
+  document.getElementById('fCount').textContent=`${fi+1} / ${deck.length}`;
+}
+flash.onclick=()=>flash.classList.toggle('flipped');
+flash.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();flash.classList.toggle('flipped');}};
+document.getElementById('fNext').onclick=()=>{fi=(fi+1)%deck.length;renderF();};
+document.getElementById('fPrev').onclick=()=>{fi=(fi-1+deck.length)%deck.length;renderF();};
+document.getElementById('fSay').onclick=()=>speak(deck[fi][0]);
+document.getElementById('fShuffle').onclick=()=>{deck=[...deck].sort(()=>Math.random()-.5);fi=0;renderF();};
+renderF();
+
+/* ---------- checklist ---------- */
+const CL=[
+ 'Say 伯父、伯母好 and introduce yourself without notes',
+ 'Ask your fiancée which wedding steps her family is keeping',
+ 'Learn the titles of her closest relatives, including her older siblings (大姊、大哥…)',
+ 'Practice the thank-you line for her parents out loud five times',
+ 'Build your toast above and record yourself saying it',
+ 'Know what to say when guests say 百年好合 or 早生貴子',
+ 'Prepare 紅包 for the door games, emcee, and helpers',
+ 'Get a suit that fits for the banquet (喜宴要穿得正式一點)'
+];
+let done={};try{done=JSON.parse(localStorage.getItem('wedding-checklist')||'{}')||{};}catch(e){done={};}
+const clEl=document.getElementById('checklist');
+function renderCL(){
+  clEl.innerHTML=CL.map((t,i)=>`<li><label><input type="checkbox" data-i="${i}"${done[i]?' checked':''}><span>${t}</span></label></li>`).join('');
+  const n=CL.filter((_,i)=>done[i]).length;
+  document.getElementById('doneCount').textContent=n===CL.length?'全部準備好了！ You are ready.':`${n} of ${CL.length} done`;
+}
+clEl.addEventListener('change',e=>{const i=e.target.dataset.i;done[i]=e.target.checked;try{localStorage.setItem('wedding-checklist',JSON.stringify(done));}catch(err){}renderCL();});
+renderCL();
+</script>
+</body>
+</html>
